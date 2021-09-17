@@ -1,0 +1,40 @@
+{
+  "name": "@delioswap/governance",
+  "version": "1.0.0",
+  "description": "🏛 Governance contracts for the Delioswap protocol",
+  "author": "Noah Zinsmeister",
+  "license": "MIT",
+  "files": [
+    "build"
+  ],
+  "scripts": {
+    "precompile": "rimraf ./build/",
+    "compile": "waffle",
+    "pretest": "yarn compile",
+    "test": "mocha",
+    "lint": "prettier ./test/**/*.ts --check",
+    "prepublishOnly": "yarn test"
+  },
+  "devDependencies": {
+    "@delioswap/core": "^1.0.1",
+    "@types/chai": "^4.2.12",
+    "@types/mocha": "^8.0.3",
+    "chai": "^4.2.0",
+    "ethereum-waffle": "^3.1.0",
+    "ethereumjs-util": "^7.0.4",
+    "mocha": "^8.1.3",
+    "prettier": "^2.1.1",
+    "rimraf": "^3.0.2",
+    "solc": "0.5.16",
+    "ts-node": "^9.0.0",
+    "typescript": "^4.0.2"
+  },
+  "repository":{
+    "type": "git",
+    "url": "https://github.com/Delioswap/contracts-governance"
+  },
+  "dependencies": {},
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/"
+  }
+}
