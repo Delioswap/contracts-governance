@@ -2,7 +2,7 @@
   "name": "@delioswap/governance",
   "version": "2.0.0",
   "description": "🏛 Governance contracts for the Delioswap protocol",
-  "author": "Noah Zinsmeister",
+  "author": "Libervance",
   "license": "MIT",
   "files": [
     "build"
