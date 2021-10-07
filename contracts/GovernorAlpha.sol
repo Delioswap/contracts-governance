@@ -6,10 +6,10 @@ contract GovernorAlpha {
     string public constant name = "Delioswap Governor Alpha";
 
     /// @notice The number of votes in support of a proposal required in order for a quorum to be reached and for a vote to succeed
-    function quorumVotes() public pure returns (uint) { return 40_000_000e18; } // 4% of DSP
+    function quorumVotes() public pure returns (uint) { return 40_000_000e18; } // 8% of DSP
 
     /// @notice The number of votes required in order for a voter to become a proposer
-    function proposalThreshold() public pure returns (uint) { return 10_000_000e18; } // 1% of DSP
+    function proposalThreshold() public pure returns (uint) { return 10_000_000e18; } // 2% of DSP
 
     /// @notice The maximum number of actions that can be included in a proposal
     function proposalMaxOperations() public pure returns (uint) { return 10; } // 10 actions
