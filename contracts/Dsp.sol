@@ -14,7 +14,7 @@ contract Dsp {
     uint8 public constant decimals = 18;
 
     /// @notice Total number of tokens in circulation
-    uint public totalSupply = 1_000_000_000e18; // 1 billion Dsp
+    uint public totalSupply = 500_000_000e18; // 500 million Dsp
 
     /// @notice Address which may mint new tokens
     address public minter;
